@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>shine</title>
+    <link rel="shortcut icon" type="image" href="./image/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+        <nav class="navbar navbar-expand-lg" id="navbar">
+            <div class="container-fluid">
+              <a class="navbar-brand" style="padding-right: 60px; padding-left: 30px;"  href="#"><img src="./image/logo.png" alt="" width="50px"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="clothe.html">Clothe</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Us</a>
+                  </li>
+                </ul>
+               
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+
+                </form>
+
+                <button id="btn-login"><a href="login.html">Login</a></button>
+                <i class="fa-solid fa-cart-shopping" style="color: white; width: 50px; padding-left: 2px;"  > <button id="count" style="background: none;
+                    color: inherit;
+                    border: none;
+                    padding: 0;
+                    font: inherit;
+                    cursor: pointer;
+                    outline: inherit;">0</button>
+                </i> 
+            </div>
+            </div>
+          </nav>
+
+    <div class="clotheBar2">
+        <marquee width="100%" direction="left" height="30px" scrollamount="20" style="background-color: white; color: black; font-style: italic; text-align-last: justify; font-weight: bold;">
+                50% Offer Available On Minimum Shopping Of Rs.2000  50% Offer Available On Minimum Shopping Of Rs.2000 
+            </marquee>
+        <div class="position2">  
+            <h1>Good And Amazing Products</h1>
+        </div>
+    </div>
+
+    <div class="container" style="margin-top: 100px;">
+        <div class="row">
+            <div class="col-md-5 py-3 py-md-0">
+                <hr>
+            <h3>YOUR NEW FAVORITES ARE HERE</h3>
+           <p> The most coveted collection. Be first to know about the latest fashion. While you may have come for that one favorite shirt, we are confident that you will purchase more than one. Make sure you stack up on the best collection by discovering trends.
+                Make the smart choice and evolve with the fashion.</p>
+            </div>
+            <div class="col-md-5 py-3 py-md-0">
+                <img src="./image/p21.jpg" alt="" width="600px" style="margin-left: 200px;">
+                <hr>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="product-cards">
+        <div class="row" style="margin-top: 30px;">
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card">
+                    <img src="./image/p1.png" alt="">
+                    <div class="card-body">
+                        <h3>Heigh Heel</h3>
+
+                        <h5>₹750<span><i class="fa-solid fa-cart-shopping" onclick="addedcart()"></i></span></h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card">
+                    <img src="./image/p2.png" alt="">
+                    <div class="card-body">
+                        <h3>Hoodie</h3>
+                        <h5>₹1200<span><i class="fa-solid fa-cart-shopping" onclick="addedcart()"></i></span></h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card">
+                    <img src="./image/q3.png" alt="">
+                    <div class="card-body">
+                        <h3>Smart Watch</h3>
+                        <h5>₹1500<span><i class="fa-solid fa-cart-shopping" onclick="addedcart()"></i></span></h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card">
+                    <img src="./image/q4.png" alt="" width="265px" style="margin-left: 12px;">
+                    <div class="card-body">
+                        <h3>T-Shirt</h3>
+                        <h5>₹500<span><i class="fa-solid fa-cart-shopping" onclick="addedcart()"></i></span></h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" style="margin-top: 30px;">
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card">
+                    <img src="./image/q5.png" alt="">
+                    <div class="card-body">
+                        <h3>Hand Bag</h3>
+                        <h5>₹700<span><i class="fa-solid fa-cart-shopping" onclick="addedcart()"></i></span></h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card">
+                    <img src="./image/q6.png" alt="">
+                    <div class="card-body">
+                        <h3>Sport Shoes</h3>
+                        <h5>₹900<span><i class="fa-solid fa-cart-shopping" onclick="addedcart()"></i></span></h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card">
+                    <img src="./image/p7.png" alt="" >
+                    <div class="card-body">
+                        <h3> Heel</h3>
+                        <h5>₹800<span><i class="fa-solid fa-cart-shopping" onclick="addedcart()"></i></span></h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card">
+                    <img src="./image/q8.png" alt="" width="227px" style="margin-left: 28px;">
+                    <div class="card-body">
+                        <h3>Means Jeans</h3>
+                        <h5>₹1000<span><i class="fa-solid fa-cart-shopping" onclick="addedcart()"></i></span></h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="margin-top: 30px;">
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card">
+                    <img src="./image/q9.png" alt="" width="231px" style="margin-left: 30px;" >
+                    <div class="card-body">
+                        <h3>Dark Pant</h3>
+                        <h5>₹600<span><i class="fa-solid fa-cart-shopping" onclick="addedcart()"></i></span></h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card">
+                    <img src="./image/p10.jpg" alt="">
+                    <div class="card-body">
+                        <h3>flats</h3>
+                        <h5>₹600<span><i class="fa-solid fa-cart-shopping" onclick="addedcart()"></i></span></h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card">
+                    <img src="./image/p11.jpg" alt="">
+                    <div class="card-body">
+                        <h3>Sweet Shirt</h3>
+                        <h5>₹650<span><i class="fa-solid fa-cart-shopping" onclick="addedcart()"></i></span></h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card">
+                    <img src="./image/p12.jpg" alt="">
+                    <div class="card-body">
+                        <h3>T-Shirt</h3>
+                        <h5>₹400<span><i class="fa-solid fa-cart-shopping" onclick="addedcart()"></i></span></h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container py-5">
+            </div>
+    </div>
+    <!-- script area -->
+    <script>
+        var cou = 1;
+        function addedcart(){
+            document.getElementById('count').innerHTML=cou++;
+            alert('Product added!!')
+        }
+    </script>
+</body>
+</html>
+</body>
+</html>
